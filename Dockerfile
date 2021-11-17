@@ -29,7 +29,7 @@ FROM alpine:latest
 LABEL description="TPM2 Simulator"
 
 RUN apk update && apk upgrade && \ 
-  apk add --update libssl1.0 && \
+  apk add --update libssl1.1 && \
   rm -rf /var/cache/apk/*
 
 WORKDIR /tpm2/
