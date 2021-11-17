@@ -3,6 +3,7 @@ FROM alpine:latest as tpm2-build
 RUN apk update && apk upgrade && \
   apk add --update alpine-sdk \
     curl-dev \
+    json-c \
     openssl-dev && \
   rm -rf /var/cache/apk/*
 
